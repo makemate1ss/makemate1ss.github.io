@@ -180,7 +180,7 @@ function populateTable(trainees) {
 function populateTableEntry(trainee) {
   // eliminated will have value "eliminated" only if trainee is eliminated and showEliminated is true, otherwise this is ""
   let eliminated = (showEliminated && trainee.eliminated) && "eliminated";
-  let top8 = (showTop8 && trainee.top8) && "top8";
+  let top8 = (showTop6 && trainee.top8) && "top8";
   const tableEntry = `
   <div class="table__entry ${eliminated}">
     <div class="table__entry-icon">
@@ -261,7 +261,7 @@ const abbreviatedNationalities = {
 function populateRankingEntry(trainee, currRank) {
   let modifiedNationality = trainee.nationality.toUpperCase();
   let eliminated = (showEliminated && trainee.eliminated) && "eliminated";
-  let top8 = (showTop8 && trainee.top8) && "top8";
+  let top8 = (showTop6 && trainee.top8) && "top8";
   const rankingEntry = `
   <div class="ranking__entry ${eliminated}">
     <div class="ranking__entry-view">
