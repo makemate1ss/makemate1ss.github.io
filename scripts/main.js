@@ -106,6 +106,7 @@ function newTrainee() {
     name_romanized: '&#8203;', // this is a blank character
     company: '&#8203;', // this is a blank character
     nationality: '&#8203;',
+    birthyear: '&#8203;',
     grade: 'no',
     image: 'emptyrank.png',
   };
@@ -259,7 +260,7 @@ const abbreviatedNationalities = {
 }
 
 function populateRankingEntry(trainee, currRank) {
-  let modifiedNationality = trainee.nationality.toUpperCase();
+  let modifiedNationality = trainee.birthyear;
   let eliminated = (showEliminated && trainee.eliminated) && "eliminated";
   let top6 = (showTop6 && trainee.top6) && "top6";
   const rankingEntry = `

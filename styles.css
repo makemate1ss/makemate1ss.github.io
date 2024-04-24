@@ -243,13 +243,13 @@ body {
   border: none;
 }
 .eliminated .table__entry-icon-border {
-  border: 5px solid var(--no-rank);
+  border: 3px solid var(--no-rank);
 }
 .eliminated .ranking__entry-icon-border {
-  border: 5px solid var(--no-rank);
+  border: 3px solid var(--no-rank);
 }
 .ranking__entry-icon-border.dragged-over { /* defines a border for when you drag over a trainee in ranking */
-  border: 5px solid var(--checked-green);
+  border: 3px solid var(--checked-green);
 }
 
 .table__entry-text {
